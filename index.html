@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
@@ -7,25 +7,58 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
-  <style>
-  body, html {
+</head>
+
+<style>
+body, html {
     height: 100%;
+    margin: 0;
 }
 
-/* The hero image */
-.hero-image {
-    /* The image used */
-    background-image: url("https://msmsrinivasareddy.github.io/images/banner2.jpg");
-
-    /* Set a specific height */
-    height: 60%;
-
-    /* Position and center the image to scale nicely on all screens */
+.bgimg {
+    background-image: url('https://msmsrinivasareddy.github.io/images/banner2.jpg');
+    height: 100%;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    color: BLACK;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+
+.hero-image {
+    background-image: url('https://msmsrinivasareddy.github.io/images/bg.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: black;
+    
 }
 
 /* Place text in the middle of the image */
@@ -35,15 +68,17 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
+    color: WHITE;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
 }
-.navbar {margin-bottom: 0;}
-
-  </style>
-</head>
+.navbar-inner {
+    background-color:transparent;
+}
+</style>
 <body>
 
-<nav class="navbar navbar-custom">
+<nav class="navbar navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuBar">
@@ -61,13 +96,45 @@
       </ul>
     </div>
   </div>
-</nav> <div class="hero-image">
+</nav>
+
+<div class="hero-image">
   <div class="hero-text">
-    <h1>We're getting married</h1>
-    
-<div class="countdown-area" data-final-date="2017/09/30 23:59:59" data-after-countdown="Thank you for attending our wedding!"></div>
+  	<h1>We're getting married @</h1>
+    <p id="demo" style="font-size:30px"></p>
   </div>
-</div> 
+</div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Nov 26, 2017 05:05:00").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
 
 </body>
 </html>

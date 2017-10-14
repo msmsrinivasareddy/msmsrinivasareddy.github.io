@@ -41,6 +41,7 @@ body, html {
 	font-size: 10px;
 	font-weight: bold;
 	font-style: italic;
+	line-height: 0.5;
 }
 
 @media screen and (max-width: 375px) {
@@ -92,35 +93,89 @@ p {
 	margin: 0 auto; /* Align slide image horizontally center */
 }
 
-	@import url(https://fonts.googleapis.com/css?family=Expletus+Sans:600);
+@import url(https://fonts.googleapis.com/css?family=Expletus+Sans:600);
 /*==========SCALE-IN==========*/
-@-webkit-keyframes scale-in {
-     0%   {transform: scale(10, 10); opacity: 0;}
-    100% {transform: scale(1, 1); opacity: 1;}
+@
+-webkit-keyframes scale-in { 0% {
+	transform: scale(10, 10);
+	opacity: 0;
 }
 
-@keyframes scale-in {
-    0%   {transform: scale(10, 10); opacity: 0;}
-    100% {transform: scale(1, 1);  opacity: 1;}
+100%
+{
+transform
+:
+ 
+scale
+(1
+,
+1);
+opacity
+:
+ 
+1;
+}
+}
+@
+keyframes scale-in { 0% {
+	transform: scale(10, 10);
+	opacity: 0;
+}
+
+100%
+{
+transform
+:
+ 
+scale
+(1
+,
+1);
+opacity
+:
+ 
+1;
+}
 }
 /*==========ROLL-OUT==========*/
-@-webkit-keyframes roll-out {
-    0%   {width: 0;}
-    100% {width: 100%; }
-}
-@keyframes roll-out {
-    0%   {width: 0;}
-    100% {width: 100%; }
+@
+-webkit-keyframes roll-out { 0% {
+	width: 0;
 }
 
-
-.hero-image h1, .hero-image p,.hero-image h2,.hero-image h3{
-  -webkit-animation: scale-in 1.3s ease-out;
-  -moz-animation: scale-in 1.3s  ease-out;
-    animation: scale-in 1.3s ease-out; 
+100%
+{
+width
+:
+ 
+100%;
+}
+}
+@
+keyframes roll-out { 0% {
+	width: 0;
 }
 
+100%
+{
+width
+:
+ 
+100%;
+}
+}
+.hero-image h1, .hero-image p, .hero-image h3 {
+	-webkit-animation: scale-in 1.3s ease-out;
+	-moz-animation: scale-in 1.3s ease-out;
+	animation: scale-in 1.3s ease-out;
+	line-height: 0.7;
+	font-weight: bold;
+}
 
+.hero-image h2 {
+	font-weight: bold;
+	line-height: 0.7;
+}
 </style>
 <body>
 

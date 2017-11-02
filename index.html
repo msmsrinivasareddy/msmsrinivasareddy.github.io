@@ -18,7 +18,6 @@ body, html {
 	margin: 0;
 	background: #DFE2DB !important;
 }
-
 .hero-image {
 	background-image:
 		url('https://msmsrinivasareddy.github.io/images/Wedding_rings.jpg');
@@ -28,7 +27,6 @@ body, html {
 	position: relative;
 	color: white;
 }
-
 /* Place text in the middle of the image */
 .hero-text {
 	text-align: center;
@@ -40,17 +38,14 @@ body, html {
 	font-family: "Comic Sans MS", "Comic Sans", cursive;
 	font-size: medium;
 }
-
 @media screen and (max-width: 375px) {
 	body {
 		align-items: flex-start;
 	}
 }
-
 .navbar a {
 	color: white;
 }
-
 .navbar {
 	border-bottom: 0;
 	position: absolute;
@@ -63,7 +58,6 @@ body, html {
 	font-size: 17px;
 	font-color: white;
 }
-
 p {
 	
 	font-family: "Comic Sans MS", "Comic Sans", cursive;;
@@ -72,32 +66,26 @@ p {
 	font-style: italic;
 	line-height: 0.5;
 }
-
 .nav>li>a:hover, .nav>li>a:focus {
 	background-color: transparent;
 }
-
 .carousel {
 	background: white;
 	margin-top: 20px;
 }
-
 .carousel .item {
 	min-height: 280px;
 	/* Prevent carousel from being distorted if for some reason image doesn't load */
 }
-
 .carousel .item img {
 	margin: 0 auto; /* Align slide image horizontally center */
 }
-
 	@import url(https://fonts.googleapis.com/css?family=Expletus+Sans:600);
 /*==========SCALE-IN==========*/
 @-webkit-keyframes scale-in {
      0%   {transform: scale(10, 10); opacity: 0;}
     100% {transform: scale(1, 1); opacity: 1;}
 }
-
 @keyframes scale-in {
     0%   {transform: scale(10, 10); opacity: 0;}
     100% {transform: scale(1, 1);  opacity: 1;}
@@ -111,8 +99,6 @@ p {
     0%   {width: 0;}
     100% {width: 100%; }
 }
-
-
 .hero-image h1, .hero-image p,.hero-image h3{
   -webkit-animation: scale-in 1.3s ease-out;
   -moz-animation: scale-in 1.3s  ease-out;
@@ -121,15 +107,11 @@ p {
    font-weight: bold;
    font-size:large;
 }
-
 .hero-image h2 {
 	font-weight: bold;
     line-height: 0.8;    
    font-size:large;
 }
-
-
-
 </style>
 <body>
 
@@ -184,13 +166,13 @@ p {
 				<div class="col-md-6">
 					<img src="https://msmsrinivasareddy.github.io/images/Shanmukha.JPG"
 						class="img-thumbnail" alt="inn_logo"
-						style="height: 500px; width: 500px;">
+						style="height: 500px; width: 400px;">
 				</div>
 
 				<div class="col-md-6">
 					<img src="https://msmsrinivasareddy.github.io/images/Suma.jpg"
 						class="img-thumbnail" alt="inn_logo"
-						style="height: 500px; width: 500px;">
+						style="height: 500px; width: 400px;">
 				</div>
 			</div>
 		</div>
@@ -265,13 +247,10 @@ p {
 	</section>
 
 	<script>
-
 // Set the date we're counting down to
-var countDownDate = new Date("Nov 26, 2017T05:05:00").getTime();
-
+var countDownDate = new Date("Nov 26, 2017 05:05:00").getTime();
 // Update the count down every 1 second
 var countdownfunction = setInterval(function() {
-
     // Get todays date and time
     var now = new Date().getTime();
     
@@ -291,7 +270,7 @@ var countdownfunction = setInterval(function() {
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(countdownfunction);
-        document.getElementById("demo").innerHTML = "";
+        document.getElementById("demo").innerHTML = "EXPIRED";
     }
 }, 1000);
 </script>

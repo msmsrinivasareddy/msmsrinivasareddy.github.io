@@ -11,7 +11,6 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-
 <style>
 body, html {
 	height: 100%;
@@ -112,6 +111,11 @@ p {
     line-height: 0.8;    
    font-size:large;
 }
+ h2 {
+	font-weight: bold;
+    line-height: 0.8;    
+    font-size:large;
+}
 </style>
 <body>
 
@@ -155,9 +159,7 @@ p {
 
 		<div class="text-center">
 			<br />
-			<p>
-				COUPLE
-			</p>
+			<p>COUPLE</p>
 			<br />
 		</div>
 
@@ -166,91 +168,89 @@ p {
 				<div class="col-md-6">
 					<img src="https://msmsrinivasareddy.github.io/images/Shanmukha.JPG"
 						class="img-thumbnail" alt="inn_logo"
-						style="height: 500px; width: 400px;">
+						style="height: 500px; width: 500px;">
 				</div>
 
 				<div class="col-md-6">
 					<img src="https://msmsrinivasareddy.github.io/images/Suma.jpg"
 						class="img-thumbnail" alt="inn_logo"
-						style="height: 500px; width: 400px;">
+						style="height: 500px; width: 500px;">
 				</div>
 			</div>
 		</div>
-
 	</section>
-
 	<section id="gallery">
-
-
-
 		<div class="text-center">
 			<br />
-			<p>
-				GALLERY
-			</p>
+			<p>EVENTS</p>
 			<br />
 		</div>
-		<div>
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				<!-- Carousel indicators -->
-				<ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-					<li data-target="#myCarousel" data-slide-to="3"></li>
-					<li data-target="#myCarousel" data-slide-to="4"></li>
-				</ol>
-				<!-- Wrapper for carousel items -->
-				<div class="carousel-inner">
-					<div class="item active">
-						<img src="https://msmsrinivasareddy.github.io/images/1.jpg"
-							alt="First Slide">
-					</div>
-					<div class="item">
-						<img src="https://msmsrinivasareddy.github.io/images/2.jpg"
-							alt="Second Slide">
-					</div>
-					<div class="item">
-						<img src="https://msmsrinivasareddy.github.io/images/3.jpg"
-							alt="Third Slide">
-					</div>
-					<div class="item">
-						<img src="https://msmsrinivasareddy.github.io/images/4.jpg"
-							alt="Fourth Slide">
-					</div>
-					<div class="item">
-						<img src="https://msmsrinivasareddy.github.io/images/5.jpg"
-							alt="Fifth Slide">
-					</div>
-
-				</div>
-				<!-- Carousel controls -->
-				<a class="carousel-control left" href="#myCarousel"
-					data-slide="prev"> <span
-					class="glyphicon glyphicon-chevron-left"></span>
-				</a> <a class="carousel-control right" href="#myCarousel"
-					data-slide="next"> <span
-					class="glyphicon glyphicon-chevron-right"></span>
-				</a>
+		<div class="text-center">
+			<br />
+			<h2>Marraige</h2>
+			<h2>Starts @ 7 PM 25/11/2017, muhurtham 26/11/2017 05:05 AM</h2>
+			<h2>Location : Sri Dharma Function Hall, Tadepalligudem</h2>
+			<br />
+			<div class="mapContainer">
+				<h2><a class="direction-link" target="_blank"
+					href="//maps.google.com/maps?f=d&amp;daddr=Beside NH-5, Alampuram - Racherla Road, Racherla, Tadepalligudem, Andhra Pradesh 534166, India&amp;hl=en">
+					Get Directions</a></h2>
+				<div id="map"></div>
 			</div>
-	</section>
-
-	<section id="events">
-
+		</div>
 		<div class="text-center">
 			<br />
-			<p>
-			EVENTS
-			</p>
+			<h2>Reception</h2>
+			<h2>Starts @ 7 PM 26/11/2017</h2>
+			<h2>Location : TTD, Gudivada</h2>
 			<br />
+			<div class="mapContainer1">
+				<h2><a class="direction-link" target="_blank"
+					href="//maps.google.com/maps?f=d&amp;daddr=Tirumala Tirupati Devasthanam Kalyana Mandapamg,Santhi Nagar, Gudivada, Andhra Pradesh 521301, India&amp;hl=en">
+					Get Directions</a></h2>
+				<div id="map"></div>
+			</div>
 		</div>
 	</section>
+	<section id="parents">
+		<div class="text-center">
+			<br />
+			<p>PARENTS</p>
+			<br />
+		</div>
+
+		<div class=" text-center">
+			<div class="row">
+				<div class="col-md-6">
+					<img src="https://msmsrinivasareddy.github.io/images/AMMA_NANNA.jpg"
+						class="img-thumbnail" alt="inn_logo"
+						style="height: 500px; width: 500px;">
+				</div>
+
+				<div class="col-md-6">
+					<img src="https://msmsrinivasareddy.github.io/images/ATTA_MAMA.jpg"
+						class="img-thumbnail" alt="inn_logo"
+						style="height: 500px; width: 500px;">
+				</div>
+			</div>
+		</div>
+
+
+	</section>
+	
+	<div class="text-center">
+		<br/>		
+		<p>Thank You!!</p>
+	</div>
 
 	<script>
+
 // Set the date we're counting down to
-var countDownDate = new Date("Nov 26, 2017 05:05:00").getTime();
+var countDownDate = new Date("Nov 26, 2017T05:05:00+530").getTime();
+
 // Update the count down every 1 second
 var countdownfunction = setInterval(function() {
+
     // Get todays date and time
     var now = new Date().getTime();
     
@@ -270,7 +270,7 @@ var countdownfunction = setInterval(function() {
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(countdownfunction);
-        document.getElementById("demo").innerHTML = "EXPIRED";
+        document.getElementById("demo").innerHTML = "";
     }
 }, 1000);
 </script>
